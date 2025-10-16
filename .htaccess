@@ -6,11 +6,11 @@
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
-RewriteBase /wp-fresh/
+RewriteBase /wp-7-figure-affiliate/
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /wp-fresh/index.php [L]
+RewriteRule . /wp-7-figure-affiliate/index.php [L]
 </IfModule>
 
 # END WordPress
